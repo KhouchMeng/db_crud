@@ -1,0 +1,39 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.search{
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-color: red;
+}
+.image-logo1{
+    display: none;
+}
+.content-img{
+    /* display: none; */
+    width: 310px;
+    height: 300px;
+    background-color: white;
+    display: none;
+    z-index: 10000;
+    position: absolute;
+    left: 0;
+}
+.container-fluid:hover .content-img{
+    display: block;
+}
+@media (max-width: 992px){
+    .image-logo1{
+        display: block;
+    }
+    
+    .menu-icon{
+        display: none;
+    }
+    .image-logo2{
+        display: none;
+    }
+}
